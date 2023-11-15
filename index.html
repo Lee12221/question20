@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철길 마을</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <!-- #wrap>#left+#contents+#slide^#footer -->
+    <div id="wrap">
+        <div id="left">
+            <!-- .logo+nav -->
+            <div class="logo">
+                <a href="#"><img src="img/logo2.png" alt="로고"></a>
+            </div>
+            <nav>
+                <!-- ul.gnb>li*4>a[href="#"]+ul.sub>li*4>a[href="#"] -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">철길 마을</a>
+                        <ul class="sub">
+                            <li><a href="#">마을 소개</a></li>
+                            <li><a href="#">마을의 유래</a></li>
+                            <li><a href="#">볼거리</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">주변 맛집</a>
+                        <ul class="sub">
+                            <li><a href="#">빵집</a></li>
+                            <li><a href="#">간장게장</a></li>
+                            <li><a href="#">중국음식점</a></li>
+                            <li><a href="#">횟집</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">주변 여행지</a>
+                        <ul class="sub">
+                            <li><a href="#">은파호수공원</a></li>
+                            <li><a href="#">초원사진관</a></li>
+                            <li><a href="#">월명공원</a></li>
+                            <li><a href="#">진포해양공원</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">도움마당</a>
+                        <ul class="sub">
+                            <li><a href="#">교통정보</a></li>
+                            <li><a href="#">주변 주차장</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">자료마당</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contents">
+            <!-- #banner+hr+#notice+hr+#gallery+hr+#link -->
+            <div id="banner">
+                <!-- ul.banner>li*3>a[href="#"] -->
+                <ul class="banner">
+                    <li><a href="#">
+                        <img src="img/banner.png" alt="배너">
+                    </a></li>
+                    <li><a href="#">
+                        <h3>2023 군산 시간여행축제</h3>
+                        <p>
+                            모두 함께 떠나는 군산으로의 시간 여행<br>
+                            2023.10.06(금)~10.09(월) 4일간
+                        </p>
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/next.png" alt="다음">
+                    </a></li>
+                </ul>
+            </div>
+            <hr>
+            <div id="notice">
+                <div class="title">공지사항</div>
+                <!-- ul.notice>li*3>a[href="#"]>div.subject+div.date -->
+                <ul class="notice">
+                    <li>
+                        <a href="#" class="open">
+                            <div class="subject">2023 25회 잼버리 대회 프로그램 안내	</div>
+                            <div class="date">2023.07.18</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">2023 개별 팸투어 운영 종료 안내		</div>
+                            <div class="date">2023.06.28</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">근대 역사 박물관 본관 재개관 안내	</div>
+                            <div class="date">2023.01.18</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div id="gallery">
+                <div class="title">갤러리</div>
+                <!-- ul.gallery>li*2>a[href="#"]>img[src="img/gallery$$.jpg" alt="갤러리$"] -->
+                <ul class="gallery">
+                    <li><a href="#"><img src="img/gallery01.jpg" alt="갤러리1">철길에서</a></li>
+                    <li><a href="#"><img src="img/gallery02.jpg" alt="갤러리2">가을 하늘</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div id="link">
+                <!-- ul.link>li*4>a[href="#"]>img[src="img/link$.png" alt="바로가기$"] -->
+                <ul class="link">
+                    <li><a href="#"><img src="img/link1.png" alt="바로가기1">포토존</a></li>
+                    <li><a href="#"><img src="img/link2.png" alt="바로가기2">스탬프투어</a></li>
+                    <li><a href="#"><img src="img/link3.png" alt="바로가기3">군산맛집</a></li>
+                    <li><a href="#"><img src="img/link4.png" alt="바로가기4">추천숙박</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide">
+            <!-- ul>li*4>a[href="#"]>div.text -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="text">군산시 경암동 철길마을</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            삶의 흔적이 있는 여행지 <br>
+                            경암동 철길마을
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            포토존에서 느껴보는 <br>
+                            레트로 감성
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">군산시 경암동 철길마을</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <!-- .f_logo+.f_main>.f_menu+.copy^.family -->
+        <div class="f_logo">
+            <a href="#"><img src="img/logo2.png" alt="풋터로고"></a>
+        </div>
+        <div class="f_main">
+            <div class="f_menu">
+                <a href="#">개인정보처리방침</a> | 
+                <a href="#">영상정보처리기기운영/처리방침</a> | 
+                <a href="#">찾아오시는길</a> | 
+                <a href="#">행정전화번호안내</a> | 
+                <a href="#">사이트맵</a>
+            </div>
+            <div class="copy">
+                (우 54078) 전북 군산시 시청로 17 (조촌동,군산시청) 대표전화 (063)454-4000 팩스 (063) 454-3329 <br>
+                © Copyright(c) 2013 GUNSANCITY All rights reserved.
+            </div>
+        </div>
+        <div class="family">
+            <select name="family" id="family">
+                <option value="">패밀리 사이트</option>
+                <option value="">군산시청</option>
+                <option value="">군산시문화관광</option>
+                <option value="">군산시간여행축제</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- #popup>.popup_body>h3+p+button.close -->
+    <div id="popup">
+        <div class="popup_body">
+            <h3>25회 잼버리 대회 프로그램 안내</h3>
+            <p>
+                자세한 일정은 첨부 파일을 참고하세요. <br><br> 
+
+                첨부 : 잼버리일일방문객프로그램홍보자료.pdf
+            </p>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@charset "urf-8";
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    transition: .3s;
+}
+img{display: block;}
+body{color: #333;}
+
+#wrap{
+    display: flex;
+    height: calc(100vh - 120px);
+}
+#left{
+    width: 200px;
+}
+#contents{
+    width: 400px;
+}
+#slide{
+    width: calc(100% - 600px);
+}
+#footer{
+height: 120px;
+background: #bbb;
+}
+
+.logo{
+    height: 100px;
+    /* 높이 지정해줘야 아래 먹음 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    padding: 40px 10px;
+}
+/* 상하,좌우 순서 */
+
+.sub{
+    width: 180px;
+    display: none;
+    transform: translate(180px, -40px);
+    position: absolute;
+    background: #0003;
+    box-shadow: 0 0 3px #0007;
+}
+/* .gnb li:hover .sub{display: block;} */
+
+.gnb a{
+    line-height: 40px; padding-left: 10px;;
+}
+.sub a{
+    line-height: 32px; padding: 0; text-align: center;
+}
+
+.gnb{
+    box-shadow: 0 0 3px #333;
+}
+.gnb >li{border-bottom: 1px #ccc solid;}
+.gnb >li:last-child{border: 0;}
+
+.gnb li:hover >a{background: #eee; color: #333;}
+#sub >li:hover>a{
+    background: #333; color: #fff;
+}
+
+#contents{
+    display: flex;
+    flex-direction: column;
+    /* 콘텐츠 일렬로 정렬 */
+    justify-content: space-evenly;
+    padding: 0px 10px;
+    /* 주의 420됨 */
+    box-sizing: border-box;
+    /* 400으로 맞춤 */
+}
+
+#contents hr{
+    border: 1px #ccc dashed none; 
+}
+.banner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.banner img{
+    width: 60px;
+}
+.banner a{font-size: 12px;}
+
+.banner a:hover{opacity: .8;
+text-decoration: underline;}
+
+.title{
+    box-shadow: 0 0 3px #333;
+    line-height: 40px;
+    text-align: center;
+}
+.notice {
+    padding-top: 10px;
+}
+.notice a{
+    display: flex;
+    text-align: center;
+    line-height: 39px;
+    border-bottom: 1px #777 dotted;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.notice a:hover{
+    background: #eee;
+}
+
+
+.gallery{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.gallery img{width: 180px;}
+.gallery a:hover{
+    opacity: .7;
+    text-decoration: underline;
+}
+
+.link{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 13px;
+}
+.link img{width: 80px;}
+.link a:hover{
+    opacity: .7;
+    text-decoration: underline;
+}
+#slide a{
+    height: calc(100vh - 120px);
+}
+
+#slide li:nth-child(1) a{
+    background: url("../img/slide1.jpg") center center / cover;
+}
+#slide li:nth-child(2) a{
+    background: url("../img/slide2.jpg") center center / cover;
+}
+#slide li:nth-child(3) a{
+    background: url("../img/slide3.jpg") center center / cover;
+}
+#slide li:nth-child(4) a{
+    background: url("../img/slide1.jpg") center center / cover;
+}
+
+#slide li{
+    width: 100%;
+    /* 중요 */
+}
+#slide ul{
+    display: flex;
+    width: 400%;
+    animation: slide 9s infinite;
+}
+#slide li{width: 100%;}/* 중요!! */
+@keyframes slide{
+    0%{margin-left: 0;}
+    33%{margin-left: -100%;}
+    66%{margin-left: -200%;}
+    100%{margin-left: -300%;}
+}
+#slide{overflow: hidden;}
+
+.text{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    background: #000a;
+    height: 80px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f_logo{
+    height: 120px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(1);
+}
+.f_menu a{
+    display: inline-block;
+}
+/* 앵커 꼭 붙여~~! */
+.f_menu a:hover {text-decoration: underline;}
+
+.family{
+    padding-right: 20px;
+}
+.family select{
+    width: 160px;
+    height: 40px;
+    text-align: center;
+}
+
+#popup{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background: #000a;
+    z-index: 999999;
+}
+.popup_body{
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    text-align: center;
+}
+.popup_body h3{
+    padding-top: 30px;
+    line-height: 80px;
+    font-size: 1.2rem;
+}
+.close{
+    width: 150px;
+    line-height: 40px;
+    margin-top: 30px;
+}
